@@ -10,8 +10,6 @@ A modern, responsive, single-page website for [Techfest IIT Bombay](https://tech
 
 🔗 [View the Website Here](https://yourusername.github.io/techfest-website/)
 
-*(Replace with your actual deployed link!)*
-
 ---
 
 ## 🎯 Features
@@ -36,9 +34,7 @@ A modern, responsive, single-page website for [Techfest IIT Bombay](https://tech
 
 | Desktop | Mobile |
 | ------- | ------ |
-| ![Desktop Screenshot](https://via.placeholder.com/800x400?text=Desktop+View) | ![Mobile Screenshot](https://via.placeholder.com/300x600?text=Mobile+View) |
-
-*(Replace these images with actual screenshots of your site!)*
+| ![Desktop Screenshot](https://github.com/SUMAN1040/techfest-website/blob/main/assets/desktop.png) | ![Mobile Screenshot](https://github.com/SUMAN1040/techfest-website/blob/main/assets/mobile.png) |
 
 ---
 
