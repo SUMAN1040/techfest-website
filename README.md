@@ -8,7 +8,7 @@ A modern, responsive, single-page website for [Techfest IIT Bombay](https://tech
 
 ## 🌐 Live Demo
 
-🔗 [View the Website Here](https://yourusername.github.io/techfest-website/)
+🔗 [View the Website Here](https://suman1040.github.io/techfest-website/)
 
 ---
 
