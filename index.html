@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <canvas id="particle-canvas"></canvas>
 
   <header>
     <div class="logo">
@@ -30,30 +31,43 @@
 
   <main>
     <section id="home">
-      <h1>Fueling Asia’s Biggest Tech Movement.</h1>
-      <button class="cta">Register Now</button>
+      <h1 data-text="TECHFEST: SURVIVAL OF THE FITTEST">TECHFEST: SURVIVAL OF THE FITTEST</h1>
+      <div class="hero-btns">
+        <button class="cta">Register Now</button>
+        <button class="cta secondary">See Schedule</button>
+      </div>
     </section>
 
-<section id="about">
-  <h2>About Techfest</h2>
-  <p>
-    Techfest IIT Bombay, established in 1998, has grown to become Asia’s largest science and technology festival. It is a platform where innovation meets inspiration, drawing over 175,000 visitors annually and reaching millions worldwide through its diverse initiatives.
-  </p>
+    <section id="about">
+      <h2>Mission Brief</h2>
+      <p>
+        Techfest is Asia’s largest science and technology festival, a high-octane battleground where the most brilliant minds compete for dominance in innovation and engineering. 
+      </p>
+      
+        <div class="stat-item reveal-init">
+          <span class="stat-label">OPERATIONS SINCE</span>
+          <span class="stat-value">1998</span>
+        </div>
+        <div class="stat-item reveal-init">
+          <span class="stat-label">ACTIVE PERSONNEL</span>
+          <span class="stat-value">175K+</span>
+        </div>
+        <div class="stat-item reveal-init">
+          <span class="stat-label">TACTICAL ZONES</span>
+          <span class="stat-value">50+</span>
+        </div>
+      </div>
   
-  <p>
-    Driven by a vision to promote technology, scientific thinking, and innovation, Techfest bridges the gap between industry leaders, budding engineers, researchers, and students. Each edition of Techfest is a grand confluence of exhibitions, competitions, workshops, talks, and performances.
-  </p>
-  
-  <h3>Highlights:</h3>
-  <ul>
-    <li>Over 75+ international and national events and competitions</li>
-    <li>Renowned speakers from top tech and research fields</li>
-    <li>Interactive exhibitions showcasing cutting-edge technology</li>
-    <li>Workshops with hands-on training in emerging technologies</li>
-    <li>Initiatives focusing on social causes and sustainability</li>
+  <h3>Core Missions</h3>
+  <ul class="mission-list">
+    <li><span class="icon">01</span> Innovation meets inspiration</li>
+    <li><span class="icon">02</span> Diverse scientific initiatives</li>
+    <li><span class="icon">03</span> Future-tech exhibitions</li>
+    <li><span class="icon">04</span> Hands-on workshops</li>
+    <li><span class="icon">05</span> Social sustainability</li>
   </ul>
   
-  <p>
+  <p style="margin-top: 40px; border-left: 2px solid var(--primary-pubg); padding-left: 20px;">
     From cutting-edge robotics to artificial intelligence challenges, Techfest continues to be a beacon of technological advancement and a place where ideas turn into reality. Join us and be part of the movement that fuels Asia’s biggest tech revolution.
   </p>
 </section>
@@ -63,20 +77,32 @@
       <h2>Events</h2>
       <div class="event-cards">
         <div class="event-card">
+          <div class="event-card-corners"></div>
+          <div class="card-tag">RANK: 01</div>
           <h3>Web Development</h3>
-          <p>Build modern, responsive web applications.</p>
+          <p>Deploy mission-critical web applications.</p>
+          <button class="card-btn">Deploy</button>
         </div>
         <div class="event-card">
+          <div class="event-card-corners"></div>
+          <div class="card-tag">RANK: 02</div>
           <h3>AI Challenges</h3>
-          <p>Compete in advanced AI problem-solving challenges.</p>
+          <p>Compete in the ultimate AI survival arena.</p>
+          <button class="card-btn">Deploy</button>
         </div>
         <div class="event-card">
+          <div class="event-card-corners"></div>
+          <div class="card-tag">RANK: 03</div>
           <h3>Robotics</h3>
-          <p>Showcase your innovation in robotics competitions.</p>
+          <p>Manual control: Engage in bot warfare.</p>
+          <button class="card-btn">Deploy</button>
         </div>
         <div class="event-card">
+          <div class="event-card-corners"></div>
+          <div class="card-tag">RANK: 04</div>
           <h3>Hackathons</h3>
-          <p>Collaborate and innovate through intense hackathons.</p>
+          <p>48-hour endurance: Survival of the fittest.</p>
+          <button class="card-btn">Deploy</button>
         </div>
       </div>
     </section>
@@ -84,34 +110,52 @@
 <section id="speakers">
   <h2>Speakers</h2>
   <div class="speakers-grid">
-    <div class="speaker-card">
-      <img src="assets/SP1.png" alt="Speaker 1" />
-      <h3>Jane Doe</h3>
+    <div class="speaker-card" data-id="TF-01">
+      <div class="img-container">
+        <img src="assets/SP1.png" alt="Speaker 1" />
+        <div class="scanline"></div>
+      </div>
+      <h3>Aiko Tanaka</h3>
       <p>AI Researcher</p>
     </div>
-    <div class="speaker-card">
-      <img src="assets/SP2.png" alt="Speaker 2" />
-      <h3>John Smith</h3>
+    <div class="speaker-card" data-id="TF-02">
+      <div class="img-container">
+        <img src="assets/SP2.png" alt="Speaker 2" />
+        <div class="scanline"></div>
+      </div>
+      <h3>Marcus Vane</h3>
       <p>Web3 Developer</p>
     </div>
-    <div class="speaker-card">
-      <img src="assets/SP3.png" alt="Speaker 3" />
-      <h3>Priya Singh</h3>
+    <div class="speaker-card" data-id="TF-03">
+      <div class="img-container">
+        <img src="assets/SP3.png" alt="Speaker 3" />
+        <div class="scanline"></div>
+      </div>
+      <h3>Sriya Iyer</h3>
       <p>Cybersecurity Expert</p>
     </div>
-    <div class="speaker-card">
-      <img src="assets/SP4.png" alt="Speaker 4" />
-      <h3>Raj Patel</h3>
+    <div class="speaker-card" data-id="TF-04">
+      <div class="img-container">
+        <img src="assets/SP4.png" alt="Speaker 4" />
+        <div class="scanline"></div>
+      </div>
+      <h3>Xander Blaze</h3>
       <p>Robotics Engineer</p>
     </div>
-    <div class="speaker-card">
-      <img src="assets/SP5.png" alt="Speaker 5" />
-      <h3>Emily Chen</h3>
+    <div class="speaker-card" data-id="TF-05">
+      <div class="img-container">
+        <img src="assets/SP5.png" alt="Speaker 5" />
+        <div class="scanline"></div>
+      </div>
+      <h3>Elena Frost</h3>
       <p>Data Scientist</p>
     </div>
-    <div class="speaker-card">
-      <img src="assets/SP6.png" alt="Speaker 6" />
-      <h3>Michael Brown</h3>
+    <div class="speaker-card" data-id="TF-06">
+      <div class="img-container">
+        <img src="assets/SP6.png" alt="Speaker 6" />
+        <div class="scanline"></div>
+      </div>
+      <h3>Dimitri Volkov</h3>
       <p>Blockchain Architect</p>
     </div>
   </div>
